@@ -13,7 +13,7 @@ The central result: **misspecification costs are asymmetric**. Overestimating im
 
 ## Model
 
-We implement the **AFS model** (Alfonsi, Fruth & Schied, 2010), where price impact is a nonlinear function of a moving average of order flow:
+I implemented the **AFS model** (Alfonsi, Fruth & Schied, 2010), where price impact is a nonlinear function of a moving average of order flow:
 
 $$I_t = \lambda \, \text{sign}(J_t) |J_t|^c, \qquad dJ_t = -\frac{1}{\tau} J_t \, dt + dQ_t$$
 
