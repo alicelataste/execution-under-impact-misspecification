@@ -54,3 +54,33 @@ Profit ratio $U(J(\hat{c}); c) / U(J(c); c)$ as a function of misspecified conca
 **Key takeaway**: when uncertain about impact parameters, err on the conservative side.
 
 ## Project Structure
+```
+src/
+    afs_model.py      # AFS model, optimal strategy, misspecification costs
+    ow_model.py       # Obizhaeva-Wang model (Nutz et al.)
+    riccati.py        # Riccati ODE solver for optimal coefficients
+    misspec.py        # Joint misspecification analysis
+    simulation.py     # Monte Carlo simulation engine
+notebooks/
+    01_hey_reproduction.ipynb   # Reproduces Hey et al. (2023) Figures 4 & 5
+    02_nutz_reproduction.ipynb  # Reproduces Nutz et al. (2025) simulations
+    03_joint_misspec.ipynb      # Original contribution: joint misspecification
+tests/
+    test_models.py    # Unit tests — analytical limit cases
+figures/
+    fig4_profit_ratio_concavity.png
+    fig5_profit_ratio_decay.png
+```
+
+## References
+
+- Hey, N., Bouchaud, J.-P., Mastromatteo, I., Muhle-Karbe, J., & Webster, K. (2023). *The Cost of Misspecifying Price Impact*. SSRN 4465282.
+- Nutz, M., Webster, K., & Zhao, L. (2025). *Unwinding Stochastic Order Flow: When to Warehouse Trades*. Preprint.
+- Alfonsi, A., Fruth, A., & Schied, A. (2010). Optimal execution strategies in limit order books. *Quantitative Finance*, 10(2), 143–157.
+- Almgren, R., & Chriss, N. (2001). Optimal execution of portfolio transactions. *Journal of Risk*, 3(2), 5–39.
+
+## Author
+
+Alice LATASTE
+M2 Applied Mathematics and Data Science student @ Ecole Polytechnique
+alice.lataste@polytechnique.edu
